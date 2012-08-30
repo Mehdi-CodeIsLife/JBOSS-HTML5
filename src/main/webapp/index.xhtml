@@ -8,6 +8,7 @@
                 xmlns:rich="http://richfaces.org/rich"
                 xmlns:my="http://java.sun.com/jsf/composite/components">
     <ui:define name="content">
+    
         <h:outputStylesheet name="app.css" library="css"/>
         
         <h:form id="form">
@@ -32,6 +33,12 @@
                 	<legend>Messages</legend>
                     <h:messages id="messages"/>         
                 </fieldset>       
-        </h:form> 
+        </h:form>
+        
+        <ui:remove>
+        	<ui:include src="/togglePanel/samples/wizard-sample.xhtml" />
+        </ui:remove>
+        
+         
     </ui:define>
 </ui:composition>
