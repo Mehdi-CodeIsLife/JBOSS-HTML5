@@ -11,34 +11,11 @@
     
         <h:outputStylesheet name="app.css" library="css"/>
         
-        <h:form id="form">
-                 <h:panelGrid columns="3">
-                              <h:commandButton value="Invoke listener method">
-                              		<a4j:actionListener listener="#{actionListenerBean.handleActionMethod}"/>
-                              		<f:ajax render="messages"/>
-                              </h:commandButton>
-                              
-                              <h:commandButton value="Invoke listener by type">
-                              	     <a4j:actionListener type="rt.beans.ActionListenerBean$ActionListenerImpl"/>                 
-                              	     <f:ajax render="messages"/>             
-                              </h:commandButton>               
-                              
-                              <h:commandButton value="Invoke listener by binding">                 
-                              		<a4j:actionListener binding="#{actionListenerBean.actionListener}"/>                 
-                              		<f:ajax render="messages"/>             
-                              </h:commandButton>           
-                </h:panelGrid>           
-                
-                <fieldset>             
-                	<legend>Messages</legend>
-                    <h:messages id="messages"/>         
-                </fieldset>       
-        </h:form>
+       	<ui:include src="/togglePanel/invokeListenerCase.xhtml" />       
+       
+       	<ui:include src="/togglePanel/samples/wizard-sample.xhtml" />
         
-        
-        	<ui:include src="/togglePanel/samples/wizard-sample.xhtml" />
-        
-        
+        <ui:include src="/layer1/userDeleteCase.xhtml" />
          
     </ui:define>
 </ui:composition>
