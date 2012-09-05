@@ -1,13 +1,18 @@
+import static org.junit.Assert.*;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
+import org.junit.Test;
+
 import rt.beans.Bookbank;
 
 
-public class TestClass {
-	
-	public boolean testCase(){
+public class BookbankTest {
+
+	@Test
+	public void test() {
 		EntityManager em = Persistence.createEntityManagerFactory("JpaTest1").createEntityManager();
 		EntityTransaction t = em.getTransaction();
 		
@@ -21,7 +26,7 @@ public class TestClass {
 		t.commit();
 		
 		t.begin();
-		Bookbank resultBook = (Bookbank) em.createQuery("select * from Bookbank b order by b.id asc").setMaxResults(1).getSingleResult();
+		Bookbank resultBook = (Bookbank) em.createQuery("select b from Bookbank b order by b.id asc").setMaxResults(1).getSingleResult();
 		
 		System.out.println("Query result:");
 		System.out.println("Id: " + resultBook.getId() 
@@ -32,7 +37,6 @@ public class TestClass {
 		t.commit();
 		
 		em.close();
-		return true;
 	}
-	
+
 }
