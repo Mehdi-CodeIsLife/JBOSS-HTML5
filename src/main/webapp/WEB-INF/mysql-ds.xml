@@ -6,24 +6,25 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
    
-<!--    <datasource jndi-name="java:jboss/datasources/KitchensinkrfQuickstartDS" -->
-<!--       pool-name="kitchensinkrf-quickstart" enabled="true" -->
-<!--       use-java-context="true"> -->
-<!--       <connection-url>jdbc:h2:mem:kitchensinkrf-quickstart;DB_CLOSE_ON_EXIT=FALSE</connection-url> -->
-<!--       <driver>h2</driver> -->
-<!--       <security> -->
-<!--          <user-name>sa</user-name> -->
-<!--          <password>sa</password> -->
-<!--       </security> -->
-<!--    </datasource> -->
-   
-   <datasource jndi-name="MySqlDS" pool-name="mysql-ds">
-      <connection-url>jdbc:mysql://localhost:3306/development;DB_CLOSE_ON_EXIT=FALSE</connection-url>
-      <driver-class>com.mysql.jdbc.Driver</driver-class>
+   <datasource jndi-name="java:jboss/datasources/Example-DS"
+      pool-name="Example-DS" enabled="true"
+      use-java-context="true">
+      <connection-url>jdbc:h2:mem:test;DB_CLOSE_ON_EXIT=FALSE</connection-url>
+      <driver>h2</driver>
       <security>
-         <user-name>admin</user-name>
-         <password>admin</password>
+         <user-name>sa</user-name>
+         <password>sa</password>
       </security>
    </datasource>
 </datasources>
  
+ 
+ 
+ <!--    <datasource jndi-name="MySqlDS" pool-name="mysql-ds"> -->
+<!--       <connection-url>jdbc:mysql://localhost:3306/development</connection-url> -->
+<!--       <driver-class>com.mysql.jdbc.Driver</driver-class> -->
+<!--       <security> -->
+<!--          <user-name>admin</user-name> -->
+<!--          <password>admin</password> -->
+<!--       </security> -->
+<!--    </datasource> -->
