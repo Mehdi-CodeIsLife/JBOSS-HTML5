@@ -13,7 +13,7 @@ public class BookbankTest {
 
 	@Test
 	public void test() {
-		EntityManager em = Persistence.createEntityManagerFactory("JpaTest1").createEntityManager();
+		EntityManager em = Persistence.createEntityManagerFactory("primary").createEntityManager();
 		EntityTransaction t = em.getTransaction();
 		
 		t.begin();
