@@ -81,7 +81,7 @@ h6 {
 }
 /* Member registration styles */
 span.invalid {
-  padding-left: 20px;
+  padding-left: 25px;
   color: red;
 }
 .form {
