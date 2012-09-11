@@ -4,7 +4,7 @@
 		
 		<persistence-unit name="primary">      
 		      <jta-data-source>java:jboss/datasources/MySql_ds</jta-data-source>
-		      <class>rt.beans.Bookbank</class>
+<!-- 		      <class>rt.beans.Bookbank</class> -->
 		      <properties>
 		         <!-- Properties for Hibernate -->
 		         <property name="hibernate.hbm2ddl.auto" value="create-drop" />
