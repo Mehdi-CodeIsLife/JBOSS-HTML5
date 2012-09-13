@@ -14,12 +14,7 @@
 
 <!-- IMPLEMENTATION -->
 <composite:implementation>
-   <h:panelGrid columns="3" columnClasses="titleCell">
-      <h:outputLabel for="name" value="Name:"/>
-      <h:inputText id="name" value="#{cc.attrs.member.name}">
-         <rich:validator/>
-      </h:inputText>
-      <rich:message for="name" errorClass="invalid"/>
+   <h:panelGrid columns="3" columnClasses="titleCell">      
 
       <h:outputLabel for="email" value="Email:"/>
       <h:inputText id="email" value="#{cc.attrs.member.email}">
@@ -27,11 +22,11 @@
       </h:inputText>
       <rich:message for="email" errorClass="invalid"/>
 
-      <h:outputLabel for="phoneNumber" value="Phone #:"/>
-      <h:inputText id="phoneNumber" value="#{cc.attrs.member.phoneNumber}">
+      <h:outputLabel for="password" value="Password:"/>
+      <h:inputText id="password" value="#{cc.attrs.member.password}">
          <rich:validator/>
       </h:inputText>
-      <rich:message for="phoneNumber" errorClass="invalid"/>
+      <rich:message for="password" errorClass="invalid"/>
    </h:panelGrid>
 </composite:implementation>
 </html>
