@@ -15,14 +15,14 @@
 <!-- IMPLEMENTATION -->
 <composite:implementation>
    <h:panelGrid columns="2" columnClasses="titleCell">
-      <h:outputLabel for="name" value="Name:"/>
-      <h:outputText id="name" value="#{cc.attrs.member.name}" />
+      <h:outputLabel for="id" value="ID:"/>
+      <h:outputText id="id" value="#{cc.attrs.member.id}" />
 
       <h:outputLabel for="email" value="Email:"/>
       <h:outputText id="email" value="#{cc.attrs.member.email}"/>
 
-      <h:outputLabel for="phoneNumber" value="Phone #:"/>
-      <h:outputText id="phoneNumber" value="#{cc.attrs.member.phoneNumber}"/>
+      <h:outputLabel for="password" value="Password:"/>
+      <h:outputText id="password" value="#{cc.attrs.member.password}"/>
    </h:panelGrid>
 </composite:implementation>
 </html>

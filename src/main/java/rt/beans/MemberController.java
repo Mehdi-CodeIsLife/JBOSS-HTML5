@@ -51,7 +51,7 @@ public class MemberController {
    public void register() throws Exception {
       memberRegistration.register(newMember);
       facesContext.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Registered!", "Registration successful"));
-      pushEvent.fire(String.format("New member added: %s (id: %d)", newMember.getName(), newMember.getId()));
+      pushEvent.fire(String.format("New member added, its email: %s (id: %d)", newMember.getEmail(), newMember.getId()));
       initNewMember();
    }
 
