@@ -1,0 +1,18 @@
+0    [main] INFO  Log4jPropertyTest  - Test Log
+2    [main] DEBUG Log4jPropertyTest  - debug
+0    [main] INFO  Log4jPropertyTest  - Test Log
+2    [main] DEBUG Log4jPropertyTest  - debug
+2    [main] ERROR Log4jPropertyTest  - error
+0    [main] INFO  Log4jPropertyTest  - Test Log
+1    [main] DEBUG Log4jPropertyTest  - debug
+1    [main] ERROR Log4jPropertyTest  - error
+1    [main] WARN  Log4jPropertyTest  - warning
+0    [main] INFO  Log4jPropertyTest  - Test Log
+1    [main] ERROR Log4jPropertyTest  - error
+1    [main] WARN  Log4jPropertyTest  - warning
+0    [main] INFO  Log4jPropertyTest  - Test Log
+1    [main] ERROR Log4jPropertyTest  - error
+2    [main] WARN  Log4jPropertyTest  - warning
+0    [main] INFO  Log4jPropertyTest  - Test Log
+2    [main] ERROR Log4jPropertyTest  - error
+2    [main] WARN  Log4jPropertyTest  - warning
